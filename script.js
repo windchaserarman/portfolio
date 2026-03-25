@@ -41,6 +41,42 @@ animateCursor();
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    // --- Typewriter Effect ---
+    const typewriterTextElement = document.querySelector('.typewriter-text');
+    if (typewriterTextElement) {
+        const roles = ["Full Stack Developer", "MERN Stack Developer", "DevOps Enthusiast"];
+        let roleIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        
+        function type() {
+            const currentRole = roles[roleIndex];
+            
+            if (isDeleting) {
+                typewriterTextElement.textContent = currentRole.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typewriterTextElement.textContent = currentRole.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let typeSpeed = isDeleting ? 50 : 100;
+
+            if (!isDeleting && charIndex === currentRole.length) {
+                typeSpeed = 2000;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                roleIndex = (roleIndex + 1) % roles.length;
+                typeSpeed = 500;
+            }
+
+            setTimeout(type, typeSpeed);
+        }
+        
+        setTimeout(type, 1000);
+    }
+
     // --- Theme Toggle Logic ---
     const themeBtn = document.getElementById('theme-toggle-btn');
     if (themeBtn) {
@@ -166,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- Scroll Reveal Animation ---
-    const revealElements = document.querySelectorAll('.reveal');
+    const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
     
     const revealOptions = {
         threshold: 0.15,
@@ -202,7 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Immediate reveal for hero elements
     setTimeout(() => {
-        const heroRevels = document.querySelectorAll('#hero .reveal');
+        const heroRevels = document.querySelectorAll('#hero .reveal, #hero .reveal-left, #hero .reveal-right, #hero .reveal-scale');
         heroRevels.forEach(el => el.classList.add('active'));
     }, 100);
 
