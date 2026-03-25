@@ -107,6 +107,9 @@ document.addEventListener('DOMContentLoaded', () => {
             
             localStorage.setItem('portfolio-theme', nextTheme || 'default');
             
+            // Re-init particles on theme change
+            if (typeof initParticles === 'function') initParticles();
+            
             // Optional: animate button
             themeBtn.style.transform = 'scale(0.8)';
             setTimeout(() => themeBtn.style.transform = 'scale(1)', 150);
@@ -431,3 +434,61 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+// --- tsParticles Background ---
+function initParticles() {
+    if (typeof tsParticles === 'undefined') return;
+    
+    // Give time for theme CSS variable to apply
+    setTimeout(() => {
+        const rawColor = getComputedStyle(document.body).getPropertyValue('--accent').trim();
+        const accentColor = rawColor || '#39ff14';
+        
+        tsParticles.load("tsparticles", {
+            background: { color: { value: "transparent" } },
+            fpsLimit: 60,
+            interactivity: {
+                detectsOn: "window",
+                events: {
+                    onHover: { enable: true, mode: "grab" },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 160,
+                        links: { opacity: 0.8, color: accentColor }
+                    }
+                }
+            },
+            particles: {
+                color: { value: accentColor },
+                links: {
+                    color: accentColor,
+                    distance: 140,
+                    enable: true,
+                    opacity: 0.25,
+                    width: 1
+                },
+                move: {
+                    direction: "none",
+                    enable: true,
+                    outModes: { default: "bounce" },
+                    random: false,
+                    speed: 0.8,
+                    straight: false
+                },
+                number: {
+                    density: { enable: true, area: 800 },
+                    value: 80
+                },
+                opacity: { value: 0.3 },
+                shape: { type: "circle" },
+                size: { value: { min: 1, max: 2.5 } }
+            },
+            detectRetina: true
+        });
+    }, 50);
+}
+
+// Ensure particles are loaded early enough but after script
+window.addEventListener('load', initParticles);
