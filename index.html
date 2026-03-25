@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arman Mev | Full Stack Developer</title>
+    <meta name="description"
+        content="Portfolio of Arman Mev, Full Stack Developer experienced in MERN stack, PHP, C++, and Python.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot main" id="cursor-main"></div>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <span class="logo-text">&lt;AM/&gt;</span>
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="glass-nav">
+        <div class="nav-container">
+            <a href="#hero" class="logo text-gradient">&lt;AM/&gt;</a>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-item"><i class="fas fa-home"></i> <sup></sup> Home</a></li>
+                <li><a href="#about" class="nav-item"><i class="fas fa-user-circle"></i> <sup></sup> About</a></li>
+                <li><a href="#education" class="nav-item"><i class="fas fa-graduation-cap"></i> <sup></sup>
+                        Education</a></li>
+                <li><a href="#skills" class="nav-item"><i class="fas fa-code"></i> <sup></sup> Skills</a></li>
+                <li><a href="#projects" class="nav-item"><i class="fas fa-folder"></i> <sup></sup> Projects</a></li>
+                <li><a href="#experience" class="nav-item"><i class="fas fa-trophy"></i> <sup></sup>
+                        Certifications</a>
+                </li>
+                <li><a href="#contact" class="nav-item"><i class="fas fa-envelope"></i> <sup></sup> Contact</a></li>
+                <li>
+                    <button id="theme-toggle-btn" class="nav-item"
+                        style="background:none;border:none;cursor:pointer;font-size:1.1rem;color:var(--primary);display:flex;align-items:center;padding:0.5rem;"
+                        aria-label="Toggle theme">
+                        <i class="fas fa-palette"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+        <div class="hero-content reveal">
+            <span class="greeting">Hi, my name is</span>
+            <h1 class="name">Arman Mev.</h1>
+            <h2 class="role text-gradient">Full Stack Developer & Problem Solver.</h2>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-hire btn-pill">
+                    Hire Me <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#about" class="btn btn-outline btn-pill">
+                    <i class="far fa-user"></i> About me
+                </a>
+            </div>
+
+            <div class="hero-cv-section">
+                <div class="cv-card glass hover-float">
+                    <div class="cv-info">
+                        <h3>Arman</h3>
+                        <p>Developer</p>
+                        <a href="resume.pdf" download class="btn-cv text-gradient">Download CV <i
+                                class="fas fa-download"></i></a>
+                    </div>
+                    <div class="cv-avatar">
+                        <i class="fas fa-user-alt"></i>
+                    </div>
+                </div>
+                <div class="hero-social-badges">
+                    <a href="https://linkedin.com/in/arman-mev-" target="_blank" class="social-badge linkedin"
+                        data-platform="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Windchaserarman" target="_blank" class="social-badge github"
+                        data-platform="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/ArmanMev16" target="_blank" class="social-badge twitter"
+                        data-platform="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/windchaser_arman/" target="_blank" class="social-badge instagram"
+                        data-platform="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image reveal">
+            <div class="profile-container">
+                <div class="profile-blob">
+                    <img src="Dp.jpeg" alt="profile" class="profile-img">
+                </div>
+                <!-- Floating Badges -->
+                <div class="floating-badge badge-1">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <div class="floating-badge badge-2">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="floating-badge badge-3">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down popup-anim"></i></a>
+        </div>
+        <!-- BG Elements -->
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section reveal">
+        <div class="about-layout">
+            <div class="about-text-side">
+                <h2 class="about-heading">ABOUT <span style="color: #4A90E2;">ME</span></h2>
+                <div class="about-description">
+                    <p>
+                        Hello! I'm Arman, a dedicated full-stack developer with a strong foundation in core computer
+                        science
+                        principles and software engineering. I enjoy solving complex problems, writing clean code, and
+                        exploring
+                        new technologies.
+                    </p>
+                    <p>
+                        Whether it's building interactive user interfaces with React or designing robust backend
+                        architectures
+                        with Node.js and SQL/NoSQL databases, I strive for efficiency and scalable solutions.
+                    </p>
+                    <p>
+                        Along with development, I am actively learning modern deployment workflows and Cloud
+                        technologies to understand how applications are deployed and scaled in production environments.
+                    </p>
+                    <p>
+                        I am currently seeking opportunities as a Full Stack Developer while expanding my expertise.
+                    </p>
+                </div>
+            </div>
+            <div class="about-image-side">
+                <div class="skills-circle-container">
+                    <div class="skills-center">
+                        <h4 class="skills-center-title">MY STRENGTHS</h4>
+                        <p class="skills-center-desc" id="skill-desc">Hover to explore</p>
+                    </div>
+                    <div class="skills-track">
+                        <!-- Punctual -->
+                        <div class="skill-node-wrapper" style="--i: 0;">
+                            <div class="skill-inner" style="--i: 0;">
+                                <div class="skill-content" data-index="0">
+                                    <div class="skill-icon"><i class="fas fa-clock"></i></div>
+                                    <span class="skill-name">Punctual</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Team Player -->
+                        <div class="skill-node-wrapper" style="--i: 1;">
+                            <div class="skill-inner" style="--i: 1;">
+                                <div class="skill-content" data-index="1">
+                                    <div class="skill-icon"><i class="fas fa-users"></i></div>
+                                    <span class="skill-name">Team Player</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Adaptability -->
+                        <div class="skill-node-wrapper" style="--i: 2;">
+                            <div class="skill-inner" style="--i: 2;">
+                                <div class="skill-content" data-index="2">
+                                    <div class="skill-icon"><i class="fas fa-sync-alt"></i></div>
+                                    <span class="skill-name">Adaptability</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Creativity -->
+                        <div class="skill-node-wrapper" style="--i: 3;">
+                            <div class="skill-inner" style="--i: 3;">
+                                <div class="skill-content" data-index="3">
+                                    <div class="skill-icon"><i class="fas fa-lightbulb"></i></div>
+                                    <span class="skill-name">Creativity</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portofolio Section -->
+    <section id="portfolio" class="portfolio section reveal">
+
+        <!-- Tab Navigation -->
+        <div class="portfolio-tabs-container">
+            <div class="tab-nav glass box-shadow">
+                <button class="tab-btn active" data-target="projects-tab">
+                    <i class="fas fa-code"></i> Projects
+                </button>
+                <button class="tab-btn" data-target="certificates-tab">
+                    <i class="fas fa-award"></i> Certificates
+                </button>
+                <button class="tab-btn" data-target="tech-stack-tab">
+                    <i class="fas fa-cubes"></i> Skills
+                </button>
+                <button class="tab-btn" data-target="education-tab">
+                    <i class="fas fa-graduation-cap"></i> Education
+                </button>
+                <button class="tab-btn" data-target="coding-profiles-tab">
+                    <i class="fas fa-chart-line"></i> Coding Profiles
+                </button>
+            </div>
+        </div>
+
+        <div class="tab-content-container">
+            <!-- Projects Tab -->
+            <div id="projects-tab" class="tab-pane active tab-content-anim-left">
+                <div class="projects-container modern-projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass hover-lift">
+                        <div class="project-image-wrapper">
+                            <img src="project1.png" alt="Personal Library Management System" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <p class="project-overline text-gradient">Full Stack Web App</p>
+                            <h3 class="project-title">Personal Library Management System</h3>
+                            <div class="project-description box-shadow">
+                                <p>A full-stack web application designed to help users efficiently organize, track, and
+                                    manage their personal book collection. Features a smooth UI for adding, updating,
+                                    searching, and deleting books.</p>
+                            </div>
+                            <ul class="project-tech-list">
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>Express.js</li>
+                                <li>MongoDB</li>
+                                <li>Tailwind CSS</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/windchaserarman/Personal-Library-Tracker"
+                                    aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                                <a href="https://librarytracker.netlify.app/" aria-label="External Link"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass hover-lift">
+                        <div class="project-image-wrapper">
+                            <img src="project2.png" alt="Billing System" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <p class="project-overline text-gradient">PHP/MySQL Application</p>
+                            <h3 class="project-title">Billing System</h3>
+                            <div class="project-description box-shadow">
+                                <p>A shop-focused digital billing application designed to simplify everyday
+                                    transactions. Replaces manual handwritten bills with an accurate digital system.
+                                    Features CRUD operations and PDF receipt downloads.</p>
+                            </div>
+                            <ul class="project-tech-list">
+                                <li>HTML/CSS</li>
+                                <li>JavaScript</li>
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/windchaserarman/Billing-System" aria-label="GitHub Link"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="certificates-tab" class="tab-pane" style="display: none;">
+                <div class="cert-grid-modern">
+                    <!-- Certificate 1 -->
+                    <div class="modern-cert-card glass hover-lift">
+                        <div class="cert-inner">
+                            <div class="cert-image" onclick="openCertModal('1.png')">
+                                <img src="1.png" alt="Certificate Thumbnail">
+                                <div class="cert-overlay"><i class="fas fa-search-plus"></i></div>
+                            </div>
+                            <h3 class="cert-course">Full Stack (MERN) Training</h3>
+                            <p class="cert-provider">CipherSchools</p>
+                            <hr class="cert-divider">
+                            <div class="cert-footer">
+                                <span class="cert-date">Issued: Jul 2025</span>
+                                <a href="Full Stack (MERN) Training.pdf" download class="btn-cert-pdf"><i
+                                        class="fas fa-download"></i> PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Certificate 2 -->
+                    <div class="modern-cert-card glass hover-lift">
+                        <div class="cert-inner">
+                            <div class="cert-image" onclick="openCertModal('6.png')">
+                                <img src="6.png" alt="Certificate Thumbnail">
+                                <div class="cert-overlay"><i class="fas fa-search-plus"></i></div>
+                            </div>
+                            <h3 class="cert-course">Data Structures and Algorithm</h3>
+                            <p class="cert-provider">NeoColab</p>
+                            <hr class="cert-divider">
+                            <div class="cert-footer">
+                                <span class="cert-date">Issued: Dec 2025</span>
+                                <a href="Data Structures and Algorithm.pdf" download class="btn-cert-pdf"><i
+                                        class="fas fa-download"></i> PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Certificate 3 -->
+                    <div class="modern-cert-card glass hover-lift">
+                        <div class="cert-inner">
+                            <div class="cert-image" onclick="openCertModal('5.png')">
+                                <img src="5.png" alt="Certificate Thumbnail">
+                                <div class="cert-overlay"><i class="fas fa-search-plus"></i></div>
+                            </div>
+                            <h3 class="cert-course">Master Generative AI & Tools</h3>
+                            <p class="cert-provider">Udemy</p>
+                            <hr class="cert-divider">
+                            <div class="cert-footer">
+                                <span class="cert-date">Issued: Aug 2025</span>
+                                <a href="Master Generative AI & Tools.pdf.pdf" download class="btn-cert-pdf"><i
+                                        class="fas fa-download"></i> PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Certificate 4 -->
+                    <div class="modern-cert-card glass hover-lift">
+                        <div class="cert-inner">
+                            <div class="cert-image" onclick="openCertModal('3.png')">
+                                <img src="3.png" alt="Certificate Thumbnail">
+                                <div class="cert-overlay"><i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                            <h3 class="cert-course">Cloud Computing</h3>
+                            <p class="cert-provider">NPTEL</p>
+                            <hr class="cert-divider">
+                            <div class="cert-footer">
+                                <span class="cert-date">Issued: Apr 2025</span>
+                                <a href="Cloud Computing.pdf" download class="btn-cert-pdf"><i
+                                        class="fas fa-download"></i> PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Certificate 5 -->
+                    <div class="modern-cert-card glass hover-lift">
+                        <div class="cert-inner">
+                            <div class="cert-image" onclick="openCertModal('5.png')">
+                                <img src="5.png" alt="Certificate Thumbnail">
+                                <div class="cert-overlay"><i class="fas fa-search-plus"></i></div>
+                            </div>
+                            <h3 class="cert-course">Build Generative AI Apps and Solutions with No-Code Tools</h3>
+                            <p class="cert-provider">Udemy</p>
+                            <hr class="cert-divider">
+                            <div class="cert-footer">
+                                <span class="cert-date">Issued: Aug 2025</span>
+                                <a href="Build Generative AI Apps and Solutions with No-Code Tools.pdf" download
+                                    class="btn-cert-pdf"><i class="fas fa-download"></i>PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Certificate 6 -->
+                    <div class="modern-cert-card glass hover-lift">
+                        <div class="cert-inner">
+                            <div class="cert-image" onclick="openCertModal('4.png')">
+                                <img src="4.png">
+                                <div class="cert-overlay"><i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                            <h3 class="cert-course">C Programming</h3>
+                            <p class="cert-provider">NeoColab</p>
+                            <hr class="cert-divider">
+                            <div class="cert-footer">
+                                <span class="cert-date">Issued: May 2024</span>
+                                <a href="C Programming.pdf" download class="btn-cert-pdf"><i
+                                        class="fas fa-download"></i>PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Stack Tab -->
+            <div id="tech-stack-tab" class="tab-pane" style="display: none;">
+                <div class="tech-stack-grid">
+                    <!-- Core Languages -->
+                    <div class="tech-card glass hover-lift">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
+                            alt="C Language">
+                        <span>C</span>
+                    </div>
+                    <div class="tech-card glass hover-lift">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+                            alt="C++">
+                        <span>C++</span>
+                    </div>
+                    <div class="tech-card glass hover-lift">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                            alt="Java">
+                        <span>Java</span>
+                    </div>
+                    <div class="tech-card glass hover-lift">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                            alt="JavaScript">
+                        <span>JavaScript</span>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="tech-card glass hover-lift">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                            alt="HTML">
+                        <span>HTML</span>
+                    </div>
+                    <div class="tech-card glass hover-lift">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                            alt="CSS">
+                        <span>CSS</span>
+                    </div>
+                    <div class="tech-card glass hover-lift">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                            alt="Tailwind CSS">
+                        <span>Tailwind CSS</span>
+                    </div>
+                    <div class="tech-card glass hover-lift">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                            alt="React">
+                        <span>React</span>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="tech-card glass hover-lift">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                            alt="Node.js">
+                        <span>Node.js</span>
+                    </div>
+                    <div class="tech-card glass hover-lift">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+                            class="invert-light-img" alt="Express.js">
+                        <span>Express.js</span>
+                    </div>
+                    <div class="tech-card glass hover-lift">
+                        <span
+                            style="font-size: 2.2rem; font-weight: 800; font-family: 'Outfit', sans-serif; display: flex; align-items: center; justify-content: center; height: 3rem; margin-bottom: 0.5rem; color: var(--text-primary);">API</span>
+                        <span>REST APIs</span>
+                    </div>
+                    <div class="tech-card glass hover-lift">
+                        <img src="https://jwt.io/img/pic_logo.svg" alt="JWT"
+                            style="width: 3rem; height: 3rem; object-fit: contain; margin-bottom: 0.5rem;">
+                        <span>JWT</span>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="tech-card glass hover-lift">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                            alt="MongoDB">
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="tech-card glass hover-lift">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+                            alt="PostgreSQL">
+                        <span>PostgreSQL</span>
+                    </div>
+
+                    <!-- Tools / DevOps / Cloud -->
+                    <div class="tech-card glass hover-lift">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                            alt="Git">
+                        <span>Git</span>
+                    </div>
+                    <div class="tech-card glass hover-lift">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                            class="invert-light-img" alt="GitHub">
+                        <span>GitHub</span>
+                    </div>
+                    <div class="tech-card glass hover-lift">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+                            alt="Docker">
+                        <span>Docker</span>
+                    </div>
+                    <div class="tech-card glass hover-lift">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+                            class="invert-light-img" alt="AWS (Basics)">
+                        <span>AWS (Basics)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Tab -->
+            <div id="education-tab" class="tab-pane" style="display: none;">
+                <div class="edu-timeline">
+                    <!-- University -->
+                    <div class="edu-item glass hover-lift">
+                        <div class="edu-dot"></div>
+                        <h3 class="edu-title">Bachelor of Technology - CSE</h3>
+                        <h4 class="edu-school text-gradient">Lovely Professional University, Punjab</h4>
+                        <div class="edu-meta">
+                            <span class="edu-date"><i class="far fa-calendar-alt"></i> Aug 2023 - Present</span>
+                            <span class="edu-grade"><i class="fas fa-star text-gradient"></i> CGPA: 7.56</span>
+                        </div>
+                    </div>
+
+                    <!-- Intermediate -->
+                    <div class="edu-item glass hover-lift">
+                        <div class="edu-dot"></div>
+                        <h3 class="edu-title">Intermediate (12th)</h3>
+                        <h4 class="edu-school text-gradient">Swami Vivekanand Sr Sec School, Bundi</h4>
+                        <div class="edu-meta">
+                            <span class="edu-date"><i class="far fa-calendar-alt"></i> Apr 2020 - Mar 2021</span>
+                            <span class="edu-grade"><i class="fas fa-star text-gradient"></i> Percentage: 97.80%</span>
+                        </div>
+                    </div>
+
+                    <!-- Matriculation -->
+                    <div class="edu-item glass hover-lift">
+                        <div class="edu-dot"></div>
+                        <h3 class="edu-title">Matriculation (10th)</h3>
+                        <h4 class="edu-school text-gradient">Bal Vidhya Bhawan Sr Sec School, Bundi</h4>
+                        <div class="edu-meta">
+                            <span class="edu-date"><i class="far fa-calendar-alt"></i> Apr 2018 - Mar 2019</span>
+                            <span class="edu-grade"><i class="fas fa-star text-gradient"></i> Percentage: 85.33%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coding Profiles Tab -->
+            <div id="coding-profiles-tab" class="tab-pane" style="display: none;">
+                <div class="coding-profiles-container">
+                    <!-- GitHub Section -->
+                    <h3 class="profile-section-title"><i class="fab fa-github"></i> GitHub Ecosystem</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card glass hover-lift"
+                            style="padding:0; border:none; background:transparent; max-width:450px; margin:0 auto; width:100%;">
+                            <img src="https://github-readme-stats.vercel.app/api?username=Windchaserarman&show_icons=true&theme=tokyonight&hide_border=true&bg_color=151515"
+                                alt="GitHub Stats" style="width:100%; border-radius:12px;">
+                        </div>
+                        <div class="stat-card glass hover-lift"
+                            style="padding:0; border:none; background:transparent; max-width:450px; margin:0 auto; width:100%;">
+                            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Windchaserarman&layout=compact&theme=tokyonight&hide_border=true&bg_color=151515"
+                                alt="Top Languages" style="width:100%; border-radius:12px;">
+                        </div>
+                        <div class="stat-card glass full-width hover-lift"
+                            style="padding:0; border:none; background:transparent; max-width:800px; margin:0 auto; width:100%;">
+                            <img src="https://github-readme-streak-stats.herokuapp.com/?user=Windchaserarman&theme=tokyonight&hide_border=true&background=151515"
+                                alt="GitHub Streak" style="width:100%; border-radius:12px;">
+                        </div>
+                    </div>
+
+                    <!-- LeetCode Section -->
+                    <h3 class="profile-section-title mt-4"><i class="fas fa-code" style="color:#FFA116;"></i> LeetCode
+                        Analytics</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card glass full-width hover-lift"
+                            style="display: flex; justify-content: center; padding:0; border:none; background:transparent; max-width:800px; margin:0 auto; width:100%;">
+                            <a href="https://leetcode.com/u/windchaser_arman/" target="_blank"
+                                style="display:block; width:100%; text-align:center;">
+                                <img src="https://leetcard.jacoblin.cool/windchaser_arman?theme=dark&font=Outfit&ext=activity"
+                                    alt="LeetCode Stats" style="width:100%; border-radius:12px;">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- HackerRank Section (Custom Replica) -->
+                    <h3 class="profile-section-title mt-4"><i class="fab fa-hackerrank" style="color:#00EA64;"></i>
+                        HackerRank Profile</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card glass full-width hover-lift hackerrank-replica"
+                            style="padding: 0; background: #151515; border-color: #333; border-radius:16px; max-width:800px; margin:0 auto; width:100%;">
+                            <a href="https://www.hackerrank.com/profile/armanmev265" target="_blank"
+                                class="hr-replica-link">
+                                <div class="hr-header">
+                                    <div class="hr-logo">
+                                        <i class="fab fa-hackerrank"></i>
+                                    </div>
+                                    <div class="hr-title">
+                                        <h4>HackerRank</h4>
+                                        <span>@armanmev265</span>
+                                    </div>
+                                    <i class="fas fa-external-link-alt hr-ext"></i>
+                                </div>
+
+                                <div class="hr-badges-container">
+                                    <div class="hr-badge-item">
+                                        <div class="hr-badge-icon gold"><img
+                                                src="https://hrcdn.net/s3_pub/hr-assets/dashboard/cpp-logo.svg"
+                                                alt="C++" style="width:24px;"></div>
+                                        <div class="hr-badge-info">
+                                            <h5>C++</h5>
+                                            <div class="hr-stars">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="hr-badge-status gold-outline">GOLD BADGE</div>
+                                    </div>
+
+                                    <div class="hr-badge-item">
+                                        <div class="hr-badge-icon blue"><img
+                                                src="https://hrcdn.net/s3_pub/hr-assets/dashboard/sql-logo.svg"
+                                                alt="SQL" style="width:24px;"></div>
+                                        <div class="hr-badge-info">
+                                            <h5>SQL (Basic)</h5>
+                                            <span class="hr-subtitle">Verified Certification</span>
+                                        </div>
+                                        <div class="hr-badge-status green-text"><i class="fas fa-check-circle"></i>
+                                            VERIFIED</div>
+                                    </div>
+
+                                    <div class="hr-badge-item">
+                                        <div class="hr-badge-icon orange"><i class="far fa-calendar-alt"
+                                                style="font-size: 1.5rem; color:#E47726;"></i></div>
+                                        <div class="hr-badge-info">
+                                            <h5>30 Days of Code</h5>
+                                            <div class="hr-stars">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                    class="far fa-star hr-empty"></i>
+                                            </div>
+                                        </div>
+                                        <div class="hr-badge-status plain-text">4-STAR</div>
+                                    </div>
+                                </div>
+
+                                <div class="hr-mastery">
+                                    <div class="hr-mastery-header">
+                                        <span>IN-PROGRESS MASTERY</span>
+                                        <span>Python & C</span>
+                                    </div>
+                                    <div class="hr-progress-bar">
+                                        <div class="hr-progress-fill"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section reveal">
+        <div class="text-center"
+            style="margin-bottom: 4rem; display: flex; flex-direction: column; align-items: center;">
+            <h2 class="text-gradient"
+                style="font-size: clamp(3rem, 5vw, 4.5rem); font-family: var(--font-heading); font-weight: 800; margin-bottom: 1rem; line-height: 1.1;">
+                Contact Me</h2>
+            <p style="font-size: 1.15rem; color: var(--text-secondary); max-width: 600px; line-height: 1.6;">
+                Got a question? Send me a message, and I'll get back to you soon.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+
+            <!-- Left: Form -->
+            <div class="contact-form-side glass">
+                <div class="contact-header-wrap">
+                    <h2 class="contact-title text-gradient">Get in Touch</h2>
+                    <i class="fas fa-share-alt share-icon"></i>
+                </div>
+                <p class="contact-desc">
+                    Have something to discuss? Send me a message and let's talk.
+                </p>
+
+                <form class="contact-form" action="mailto:armanmev265@gmail.com" method="POST" enctype="text/plain">
+                    <div class="input-group">
+                        <i class="far fa-user"></i>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="far fa-envelope"></i>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="far fa-comment-alt" style="align-self: flex-start; margin-top: 1.2rem;"></i>
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <i class="far fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Right: Connect & Details -->
+            <div class="contact-info-side glass">
+                <div class="connect-header">
+                    <span class="connect-line"></span>
+                    <h3>Connect With Me</h3>
+                </div>
+
+                <div class="primary-cards-wrap">
+                    <!-- Direct Contact -->
+                    <a href="mailto:armanmev265@gmail.com" class="connect-card primary-card">
+                        <div class="card-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="card-text">
+                            <h4>Email Me</h4>
+                            <p>armanmev265@gmail.com</p>
+                        </div>
+                    </a>
+
+                    <a href="tel:+919509555621" class="connect-card primary-card">
+                        <div class="card-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="card-text">
+                            <h4>Call Me</h4>
+                            <p>+91-9509555621</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Social Links Grid -->
+                <div class="social-cards-grid">
+                    <a href="https://linkedin.com/in/arman-mev-" target="_blank" class="connect-card mini-card">
+                        <div class="card-icon linkedin"><i class="fab fa-linkedin-in"></i></div>
+                        <div class="card-text">
+                            <h4>LinkedIn</h4>
+                            <p>@arman-mev-</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Windchaserarman" target="_blank" class="connect-card mini-card">
+                        <div class="card-icon github"><i class="fab fa-github"></i></div>
+                        <div class="card-text">
+                            <h4>GitHub</h4>
+                            <p>@Windchaserarman</p>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/windchaser_arman/" target="_blank"
+                        class="connect-card mini-card">
+                        <div class="card-icon instagram"><i class="fab fa-instagram"></i></div>
+                        <div class="card-text">
+                            <h4>Instagram</h4>
+                            <p>@windchaser</p>
+                        </div>
+                    </a>
+                    <a href="https://x.com/ArmanMev16" target="_blank" class="connect-card mini-card">
+                        <div class="card-icon twitter"><i class="fa-brands fa-x-twitter"></i></div>
+                        <div class="card-text">
+                            <h4>X (Twitter)</h4>
+                            <p>@ArmanMev16</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Certificate Modal (Lightbox) -->
+    <div id="certModal" class="modal">
+        <span class="close-modal" onclick="closeCertModal()">&times;</span>
+        <img class="modal-content" id="certModalImg">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links-footer">
+            <a href="https://github.com/Windchaserarman" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/arman-mev-" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/ArmanMev16" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/windchaser_arman/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>Built with ❤️ by Arman Mev</p>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
